@@ -32,9 +32,9 @@ print <<HTML;
 HTML
 
 if (defined $operacionMatematica) {
-    # Validar la expresión para que solo contenga caracteres permitidos
+    
     if ($operacionMatematica =~ /^[0-9+\-*\/\(\)\.\s\*\*sqrt]+$/) {
-        # Evaluar la expresión
+       
         my $result = eval($operacionMatematica);
         if ($@) {
             print "<p>Error en la expresión. Intenta de nuevo.</p>";
