@@ -6,7 +6,7 @@ use CGI::Carp qw(fatalsToBrowser);
 
 #Creamos mi objeto CGI
 my $cgi=CGI->new;
-my $expression= $cgi->param('operacionMatematica');
+my $operacionMatematica= $cgi->param('operacionMatematica');
 
 print $cgi->header;
 
@@ -26,7 +26,7 @@ print <<HTML;
    <h1>Calculadora</h1>
    <form action="/cgi-bin/calculadora.pl" method="post">
             <label for="operacionMatematica">Ingrese la expresión matemática:</label><br>
-            <input type="text" id="operacionMatematica" name="opracionMatematica" value="$operacionMatematica" required><br><br>
+            <input type="text" id="operacionMatematica" name="operacionMatematica" value="$operacionMatematica" required><br><br>
             <button type="submit">Calcular</button>
         </form>
 HTML
