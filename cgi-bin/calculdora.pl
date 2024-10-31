@@ -37,12 +37,12 @@ if (defined $operacionMatematica) {
        
         my $result = eval($operacionMatematica);
         if ($@) {
-            print "<p>Error en la expresión. Intenta de nuevo.</p>";
+            print "<p>Error en la operacion matematica . Intenta de nuevo.</p>";
         } else {
             print "<p>El resultado de $operacionMatematica es: $result</p>";
         }
     } else {
-        print "<p>Expresión no válida. Solo se permiten números y operadores básicos.</p>";
+        print "<p> Expresión no válida. Solo se permiten números y operadores básicos.</p>";
     }
 }
 
