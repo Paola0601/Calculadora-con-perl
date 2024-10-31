@@ -31,6 +31,24 @@ print <<HTML;
         </form>
 HTML
 
+if (defined $operacionMatematica) {
+    # Validar la expresión para que solo contenga caracteres permitidos
+    if ($operacionMatematica =~ /^[0-9+\-*\/\(\)\.\s\*\*sqrt]+$/) {
+        # Evaluar la expresión
+        my $result = eval($operacionMatematica);
+        if ($@) {
+            print "<p>Error en la expresión. Intenta de nuevo.</p>";
+        } else {
+            print "<p>El resultado de $operacionMatematica es: $result</p>";
+        }
+    } else {
+        print "<p>Expresión no válida. Solo se permiten números y operadores básicos.</p>";
+    }
+}
 
-
-
+print <<HTML;
+        <a href="/index.html">Regresar a la Página Principal</a>
+    </div>
+</body>
+</html>
+HTML
