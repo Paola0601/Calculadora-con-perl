@@ -15,9 +15,15 @@ body
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
-
-h1 {
+.contenedor label
+{
     font-size: 50px;
+    color: #cf76c0;
+
+
+}
+h1 {
+    font-size: 70px;
     color: #333;
 }
 input {
