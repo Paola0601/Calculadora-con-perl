@@ -8,7 +8,7 @@ use CGI::Carp qw(fatalsToBrowser);
 my $cgi=CGI->new;
 my $operacionMatematica= $cgi->param('operacionMatematica');
 
-print $cgi->header;
+print $cgi->header(-type => 'text/html', -charset => 'UTF-8');
 
 print <<HTML;
 
