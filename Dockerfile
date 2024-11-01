@@ -18,6 +18,7 @@ RUN a2dismod mpm_event mpm_worker cgid && \
 RUN mkdir -p /usr/lib/cgi-bin/
 
 # Copiar archivos HTML y recursos al contenedor
+
 COPY html/ /var/www/html/
 COPY css/ /var/www/html/css/
 COPY cgi-bin/ /usr/lib/cgi-bin/
