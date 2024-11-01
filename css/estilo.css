@@ -1,7 +1,7 @@
 body
 {
     font-family: Arial, sans-serif;
-    background-color: #e786df;
+    background-color: #832626;
     text-align: center;
     margin: 0;
     padding: 0;
@@ -9,21 +9,21 @@ body
 .contenedor{
 
     background-color: white;
-    width: 700px;
-    padding: 220px;
-    margin: 150px auto;
+    width: 300px;
+    padding: 100px;
+    margin: 50px auto;
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 .contenedor label
 {
-    font-size: 50px;
-    color: #cf76c0;
+    font-size: 30px;
+    color: #080808;
 
 
 }
 h1 {
-    font-size: 70px;
+    font-size: 50px;
     color: #333;
 }
 input {
@@ -35,14 +35,14 @@ input {
 }
 button {
     padding: 10px 20px;
-    background-color: #c763ca;
+    background-color: #ac1c1c;
     border: none;
     border-radius: 5px;
     cursor: pointer;
     font-size: 16px;
 }
 button:hover {
-    background-color: #e9aee9;
+    background-color: #b34f4f;
 }
 .result {
     margin-top: 20px;
