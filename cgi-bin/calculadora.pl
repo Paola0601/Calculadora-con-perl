@@ -35,7 +35,7 @@ HTML
 
 if (defined $operacionMatematica) {
     
-    if ($operacionMatematica =~ /^[0-9+\-*\/\(\)\.\s\*\*sqrt]+$/) {
+    if ($operacionMatematica =~ /^\s*(sqrt\(\s*-?\d+(\.\d+)?\s*\)|\(?\s*-?\d+(\.\d+)?\s*\)?\s*([\+\-\*\/]|\*\*|\^)\s*\(?\s*-?\d+(\.\d+)?\s*\)?)\s*$/) {
        
         my $result = eval($operacionMatematica);
         if ($@) {
