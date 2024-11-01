@@ -8,7 +8,7 @@ use CGI::Carp qw(fatalsToBrowser);
 my $cgi = CGI->new;
 my $operacionMatematica= $cgi->param('operacionMatematica');
 
-print $cgi->header(-type => 'text/html', -charset => 'UTF-8');
+print $cgi->header;
 
 print <<HTML;
 
@@ -22,7 +22,7 @@ print <<HTML;
   
 </head>
 <body>
- <div class="container">
+ <div class="contenedor">
    <h1>Calculadora</h1>
    <form action="/cgi-bin/calculadora.pl" method="post">
             <label for="operacionMatematica">Ingrese la expresión matemática:</label><br>
