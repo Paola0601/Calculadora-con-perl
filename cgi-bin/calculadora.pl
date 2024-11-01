@@ -22,13 +22,13 @@ print <<HTML;
   
 </head>
 <body>
- <div class="contenedor">
-   <h1>Calculadora</h1>
-   <form action="/cgi-bin/calculadora.pl" method="post">
-            <label for="operacionMatematica">Ingrese la expresión matemática:</label><br>
+    <div class="contenedor">
+    <h1>Calculadora</h1>
+    <form action="/cgi-bin/calculadora.pl" method="post">
+            <label for="operacionMatematica">Ingrese la expresion matematica:</label><br>
             <input type="text" id="operacionMatematica" name="operacionMatematica" value="$operacionMatematica" required><br><br>
             <button type="submit">Calcular</button>
-        </form>
+    </form>
 HTML
 
 if (defined $operacionMatematica) {
