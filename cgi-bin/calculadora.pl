@@ -44,7 +44,7 @@ if (defined $operacionMatematica) {
             print "<p>El resultado de $operacionMatematica es: $result</p>";
         }
     } else {
-        print "<p> Expresión no válida. Solo se permiten números y operadores básicos.</p>";
+        print "<p> Expresion no valida. Solo se permiten numeros y operadores basicos.</p>";
     }
 }
 
