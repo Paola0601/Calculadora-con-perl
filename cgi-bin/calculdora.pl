@@ -5,7 +5,7 @@ use CGI qw(:standard);
 use CGI::Carp qw(fatalsToBrowser);
 
 #Creamos mi objeto CGI
-my $cgi=CGI->new;
+my $cgi = CGI->new;
 my $operacionMatematica= $cgi->param('operacionMatematica');
 
 print $cgi->header(-type => 'text/html', -charset => 'UTF-8');
