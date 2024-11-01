@@ -38,3 +38,8 @@ button {
 button:hover {
     background-color: #e9aee9;
 }
+.result {
+    margin-top: 20px;
+    font-size: 18px;
+    color: #0c040a;
+}
